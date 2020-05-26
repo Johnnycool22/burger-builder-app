@@ -1,10 +1,14 @@
 import React from 'react';
-import BurgerBuilder from '../../../containers/BurgerBuilder/BurgerBuilder';
+
+import classes from './BurgerIngredient.css';
 
 const burgerIngredient = (props) => {
     let ingredient = null;
 
-    switch (props.type)
+    switch (props.type) {
+      case ('bread-bottom'):
+        ingredient = <div className={classes.BreadBottom}></div>
+    }
 };
 
-export default burgerBuilder;
+export default burgerIngredient;
