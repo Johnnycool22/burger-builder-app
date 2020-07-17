@@ -46,7 +46,7 @@ class BurgerBuilder extends Component {
     }
 
     purchaseContinueHandler = () => {
-        this.props.purchaseInit();
+        this.props.onInitPurchase();
         this.props.history.push('/checkout')    
     }
 
