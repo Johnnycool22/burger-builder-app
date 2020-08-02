@@ -56,13 +56,13 @@ class Auth extends Component {
                 shouldValidate={formElement.config.validation}
                 touched={formElement.config.touched}
                 changed={(event) => this.inputChangedHandler(event, formElement.id)} />
-            <Button btnType = {} />
         ));
 
         return (
             <div>
                 <form>
-
+                    {form}
+                    <Button btnType="Success">SUBMIT</Button> 
                 </form>
             </div>
         );
