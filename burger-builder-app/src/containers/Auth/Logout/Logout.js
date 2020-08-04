@@ -9,7 +9,7 @@ class Logout extends Component {
       this.props.onLogout();
     }
 
-    render() {
+    render () {
       return <Redirect to="/"/>;
     }
 }
